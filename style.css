@@ -1,0 +1,145 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #5c3d2e;
+}
+.f_bg {
+  background-image: url(images/shounen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: auto 1fr 5%;
+}
+.container {
+  grid-column: 2/3;
+  height: 100%;
+  width: auto;
+  margin: 0 1em;
+}
+
+header {
+  background-color: #2d2424af;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#anya {
+  height: 100px;
+  width: 100px;
+}
+nav {
+  background-color: #5c3d2ef1;
+  padding: 1em;
+  justify-content: center;
+}
+
+.content {
+  background-color: #b85c38;
+  display: grid;
+}
+/* center container styling for featured page */
+.featured {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  padding: 1em;
+  background-color: rgba(240, 248, 255, 0.9);
+}
+.featured > img {
+  height: 550px;
+  width: auto;
+  padding: 0 6em;
+}
+.f_blob {
+  padding: 0 2em;
+}
+.content_f {
+  grid-template-columns: 70% 1fr;
+  padding: 1em;
+}
+.c_panel {
+  display: grid;
+  border-bottom: 5px solid #5c3d2e;
+}
+
+.c_panel > h2 {
+  background-color: aliceblue;
+  padding: 0 10px;
+  text-shadow: 1px 1px #2d2424;
+  margin: 5px 0;
+  border: 2px solid;
+  border-radius: 10px 10px 0 0;
+}
+
+.c_post {
+  background-color: rgba(247, 247, 247, 0.349);
+  display: grid;
+  grid-template-columns: 20% 40% 10% auto;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 5px solid #5c3d2e;
+}
+a:link {
+  text-decoration: none;
+  color: #b85c38;
+}
+a:active {
+  text-decoration: none;
+  color: #b85c38;
+}
+a:hover {
+  text-decoration: none;
+  color: #b85c38;
+}
+a:visited {
+  text-decoration: none;
+  color: #b85c38;
+}
+
+aside {
+  padding: 2em;
+  display: grid;
+}
+.s_post {
+  padding-top: 1em;
+  border-bottom: 2px solid;
+  overflow: auto;
+}
+footer {
+  background-color: #2d2424;
+  padding: 1em;
+  color: white;
+}
+/* page1 specific */
+.p_sort {
+  padding: 5px;
+  background-color: rgba(240, 255, 255, 0.87);
+  height: 40px;
+}
+.content_n {
+  grid-template-columns: 70% 1fr;
+  padding: 1em;
+  grid-template-rows: repeat(5, auto);
+  display: grid;
+  grid-auto-flow: row;
+}
+.n_post {
+  grid-template-columns: 20% auto;
+  grid-template-rows: repeat(2, auto);
+  display: grid;
+  grid-row: auto;
+  padding: 1em;
+  border-top: 2px solid;
+
+  justify-items: flex-start;
+}
+.n_post > h4 {
+  grid-column: 2/5;
+}
+.n_post > img {
+  height: 100px;
+  width: 100px;
+  margin: 0 1em;
+  grid-row: 1/3;
+}
