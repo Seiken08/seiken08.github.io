@@ -8,8 +8,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <link rel="stylesheet" href="style.css" />
+
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link
       rel="stylesheet"
@@ -24,202 +24,578 @@
   </head>
 
   <body>
-    <div class="f_bg">
-      <div class="container">
-        <header>
-          <img src="images/weebz.png" alt="" />
-          <img src="images/anya.png" alt="" id="anya" />
-        </header>
-        <nav>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Forums</a></li>
-            <li class="list-inline-item"><a href="#">News</a></li>
-            <li class="list-inline-item"><a href="#">Merchandise</a></li>
-            <li class="list-inline-item"><a href="#">About Us</a></li>
-            <li class="list-inline-item"><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-        <!-- main featured section -->
-        <div class="featured">
-          <div class="f_blob">
-            <h3>Season 2 Confirmed!</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-              impedit laboriosam rem quaerat illum magnam expedita ipsa dicta
-              animi aspernatur! <a href="#">Read More</a>
-            </p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-kHsAMkJkQE"
-              title="SPY x FAMILY Part 2 - Official Trailer"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <img src="images/spx.png" alt="" />
-        </div>
-        <div class="content content_f container-fluid">
-          <article>
-            <div class="c_panel">
-              <h2><i class="bi bi-chat-square-dots-fill"></i> Forums</h2>
-              <!-- For every posts in content (will be called multiple times)-->
-              <div class="c_post">
-                <h6>
-                  <a href="#"><i class="bi bi-book"></i> Anime & Manga</a>
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  modi dolores magni omnis ducimus eveniet commodi deserunt,
-                  magnam veritatis eos.
-                </p>
-                <p>100K posts</p>
-                <p>Moderator: <a href="#"> Asuna</a></p>
+    <header>
+      <img src="images/weebz.png" alt="" />
+    </header>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="navbar-toggler collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar_collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link active">Featured</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                >Recommendations</a
+              >
+              <div
+                class="dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <a href="anime.html" class="dropdown-item">Anime</a>
+                <a href="manga.html" class="dropdown-item">Manga</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Manhwa</a>
               </div>
-              <div class="c_post">
-                <h6>
-                  <a href="#"
-                    ><i class="bi bi-chat-left-text-fill"></i> General
-                    Discussions</a
-                  >
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  modi dolores magni omnis ducimus eveniet commodi deserunt,
-                  magnam veritatis eos.
-                </p>
-                <p>100K posts</p>
-                <p>Moderator: <a href="#"> Asuna</a></p>
-              </div>
-              <div class="c_post">
-                <h6>
-                  <a href="#"
-                    ><i class="bi bi-palette-fill"></i> Creative Corner</a
-                  >
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  modi dolores magni omnis ducimus eveniet commodi deserunt,
-                  magnam veritatis eos.
-                </p>
-                <p>100K posts</p>
-                <p>Moderator: <a href="#"> Asuna</a></p>
-              </div>
-              <h2>Official</h2>
-              <div class="c_post">
-                <h6>
-                  <a href="#"><i class="bi bi-person-fill"></i> New Members</a>
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  modi dolores magni omnis ducimus eveniet commodi deserunt,
-                  magnam veritatis eos.
-                </p>
-                <p>100K posts</p>
-                <p>Moderator: <a href="#"> Asuna</a></p>
-              </div>
-              <div class="c_post">
-                <h6>
-                  <a href="#"><i class="bi bi-journals"></i> Recent Blogs</a>
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  modi dolores magni omnis ducimus eveniet commodi deserunt,
-                  magnam veritatis eos.
-                </p>
-                <p>100K posts</p>
-                <p>Moderator: <a href="#"> Asuna</a></p>
-              </div>
-              <div class="c_post">
-                <h6>
-                  <a href="#"
-                    ><i class="bi bi-calendar3-event-fill"></i> Events</a
-                  >
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  modi dolores magni omnis ducimus eveniet commodi deserunt,
-                  magnam veritatis eos.
-                </p>
-                <p>100K posts</p>
-                <p>Moderatoraaa: <a href="#"> Asuna</a></p>
-              </div>
-              <!-- end of post -->
-              <!-- *************************************************************** -->
-            </div>
-          </article>
+            </li>
 
-          <aside>
-            <!-- start of side posts -->
-            <div class="s_post">
-              <h3>Recent Updates</h3>
-              <h4>One Piece</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Temporibus tempora maiores aliquid consequuntur possimus iure
-                veritatis distinctio architecto quibusdam! Enim.
-              </p>
-              <h4>Dragon Ball Super</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Temporibus tempora maiores aliquid consequuntur possimus iure
-                veritatis distinctio architecto quibusdam! Enim.
-              </p>
-              <h4>Black Clover</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Temporibus tempora maiores aliquid consequuntur possimus iure
-                veritatis distinctio architecto quibusdam! Enim.
-              </p>
-            </div>
-            <div class="s_post">
-              <iframe
-                width="320"
-                height="440"
-                src="https://www.youtube.com/embed/xs-t6lGMdXU"
-                title="Dragon Ball Super: Super Hero - Official Final Trailer (English Sub CC)"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <!-- end of side posts -->
-          </aside>
-        </div>
-        <!-- end of main content -->
-        <footer>
-          <h3>Forum</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa
-            impedit explicabo maxime atque, possimus cupiditate quod debitis
-            accusamus doloremque beatae, quis ipsam omnis suscipit quibusdam
-            quidem, delectus odit dolores.
-          </p>
-        </footer>
-        <nav>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Forums</a></li>
-            <li class="list-inline-item"><a href="#">News</a></li>
-            <li class="list-inline-item"><a href="#">Merchandise</a></li>
-            <li class="list-inline-item"><a href="#">About Us</a></li>
-            <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            <a href="merch.html" class="nav-item nav-link">Merchandise</a>
           </ul>
-        </nav>
+
+          <div class="navbar-nav ms-auto mx-5">
+            <a href="login.html" class="nav-item nav-link">Log In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- This should be the carousel -->
+      <div
+        class="carousel slide carousel-light main-contain"
+        data-bs-ride="carousel"
+        id="featured_carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#featured_carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-bs-target="#featured_carousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#featured_carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner text-white f_c">
+          <div class="carousel-item active c_item">
+            <div class="row">
+              <div class="col-md-6 p-4">
+                <div class="m-3">
+                  <h5>Anime Expo 2023</h5>
+                  <p>
+                    Anime Expo 2023 is the biggest anime convention in the
+                    planet. After a two-year hiatus due to the ongoing global
+                    pandemic, Anime Expo — one of the world's biggest pop
+                    culture conventions bringing together anime and manga fans
+                    from all over the world — made its epic, four-day return to
+                    Downtown Los Angeles' Convention Center during the long
+                    Fourth of July weekend.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="images/animeexpo.jpg"
+                  alt=""
+                  class="c_icon justify-content-center"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item c_item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="m-5">
+                  <h5>Top 5 Best Waifu of 2022</h5>
+                  <p>
+                    We'll also talk about why you should watch these anime.
+                    Waifu is a term that every anime fan knows about. Whether
+                    you are an Otaku or a Weeb, you will most definitely have a
+                    waifu at this point. Every anime fan has one, and he is only
+                    devoted to that particular character.
+                  </p>
+                  <ol>
+                    <li>My Dress-up Darling - Marin Kitagawa</li>
+                    <li>Spy X Family - Yor Forger</li>
+                    <li>Re:Zero - Starting Life from Another World - Rem</li>
+                    <li>Komi Can't Communicate Season 2 - Shouko Komi</li>
+                    <li>Kaguya-sama: Love is War - Shinomiya Kaguya</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="images/marin.png" alt="" class="c_icon" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item c_item">
+            <div class="row">
+              <div class="col-md-6 p-4">
+                <div class="m-3">
+                  <h5>Highly Anticipated Movies/Arcs</h5>
+                  <ul>
+                    <li>One Piece Red</li>
+                    <li>Dragon Ball Super: Super Hero</li>
+                    <li>One Punch Man Season 3</li>
+                    <li>My Hero Academia</li>
+                    <li>My Hero Academia</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laboriosam qui alias sint magni deserunt doloremque unde
+                    assumenda? Natus ducimus necessitatibus magnam nesciunt aut
+                    voluptas dicta quo praesentium reprehenderit corporis?
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="images/saitama.png"
+                  alt=""
+                  class="c_icon align-self-end"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#featured_carousel"
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon bg-dark"></span>
+        </a>
+        <a
+          href="#featured_carousel"
+          class="carousel-control-next"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon bg-dark"></span>
+        </a>
       </div>
 
-      <!-- Bootstrap JavaScript Libraries -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"
-      ></script>
+      <!-- end of carousel -->
 
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"
-      ></script>
-    </div>
+      <!-- this is the container for both main content and sidebar -->
+
+      <div class="row p-0 m-0" style="background-color: #fcfefc">
+        <article class="col-md-9 p-0" style="overflow: hidden">
+          <div class="row-col-md-2 n-1-1">
+            <ul class="nav nav-tabs px-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active bg-warning text-white"
+                  aria-current="page"
+                  href="#"
+                  >Forums</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="row px-3"
+            style="background-color: rgba(215, 215, 240, 0.9); font-size: 12px"
+          >
+            <div class="card col-md-6 my-3 pt-3">
+              <img
+                class="card-img-top"
+                src="images/chika.gif"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Get your weeb on and chill out right here!
+                </h5>
+                <p class="card-text">
+                  Hi! I'm your guide to the wonderful world of anime culture. Be
+                  warned. Once you're in, you're never going to be the same.
+                </p>
+                <a href="forums.html" class="btn btn-outline-primary"
+                  >Let me in!</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 my-3 n-1-2">
+              <div class="f-display">
+                <img src="images/puke.gif" alt="" />
+                <div class="card-body p-2">
+                  <h5 class="card-header">
+                    <a href="#">Anime and Manga</a>
+                  </h5>
+                  <p class="card-text">
+                    Watch anime or read manga alone or with friends. Just make
+                    sure to close the door.
+                  </p>
+                  <div class="card-footer">
+                    <small class="text-muted">Last Updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="f-display">
+                <img src="images/tj.gif" alt="" />
+                <div class="card-body p-2">
+                  <h5 class="card-header">
+                    <a href="#">General Discussions</a>
+                  </h5>
+                  <p class="card-text">
+                    Discuss differences between fellow weebs through diplomatic
+                    and peaceful means.
+                  </p>
+                  <div class="card-footer">
+                    <small class="text-muted">Last Updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="f-display">
+                <img src="images/thumb4.png" alt="" />
+                <div class="card-body p-2">
+                  <h5 class="card-header">
+                    <a href="#">Entertainment</a>
+                  </h5>
+                  <p class="card-text">
+                    Don't overthink it. No FBI here. Just have fun.
+                  </p>
+                  <div class="card-footer">
+                    <small class="text-muted">Last Updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="f-display">
+                <img src="images/titan.gif" alt="" />
+                <div class="card-body p-2">
+                  <h5 class="card-header">
+                    <a href="#">Community</a>
+                  </h5>
+                  <p class="card-text">
+                    Show the community who's the real boss.
+                  </p>
+                  <div class="card-footer">
+                    <small class="text-muted">Last Updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-col-md-2 n-1-1">
+            <ul class="nav nav-tabs px-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active bg-success text-white"
+                  aria-current="page"
+                  href="#"
+                  >Creative Corner</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- gallery -->
+          <div class="row">
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/maidenofflames.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Maiden of Flames</h5>
+                <div class="card-footer">
+                  <p class="text-muted">by: cardboardtoaster</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/blackmist.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blackmist</h5>
+                <div class="card-footer">
+                  <p class="text-muted">by: cyangorilla</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/erythe.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Erythe</h5>
+                <div class="card-footer">
+                  <p class="text-muted">by: intrastele</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/codered.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Code red</h5>
+                <div class="card-footer">
+                  <p class="text-muted">by: grub-lord</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/ye.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Yeet</h5>
+                <p class="card-text">by: AK-10</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/ud.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unfortunate Discovery</h5>
+                <p class="card-text">by: zarb</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/hats.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Droid Within</h5>
+                <p class="card-text">by: hats</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/sleep.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sleep Paralysis Demon</h5>
+                <p class="card-text">by: Masaka</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/catlady.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CatLady</h5>
+                <p class="card-text">by: Cinnabun</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/shehulk.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">She Hulk</h5>
+                <p class="card-text">by: marv</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/mad.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Madness Day</h5>
+                <p class="card-text">by: madlad</p>
+              </div>
+            </div>
+            <div
+              class="gallery col-lg-3 col-md-4 p-2 bg-dark rounded text-white text-center"
+            >
+              <img
+                class="card-img-top rounded"
+                src="images/free.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Free Men</h5>
+                <p class="card-text">by: Dork223</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="col-md-3 m-0 p-0 f-1-1">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-dark text-white"
+                aria-current="page"
+                href="#"
+                >Stay Connected</a
+              >
+            </li>
+            <table class="table text-center" style="vertical-align: middle">
+              <tr>
+                <td><img class="n_ico" src="images/fb.png" alt="" /></td>
+                <td align="left">1,700k Likes</td>
+                <td align="left">
+                  <a href="#"><i class="bi bi-hand-thumbs-up"></i>Like</a>
+                </td>
+              </tr>
+              <tr>
+                <td><img class="n_ico" src="images/twit.png" alt="" /></td>
+                <td align="left">1,700k Tweets</td>
+                <td align="left">
+                  <a href="#"><i class="bi bi-twitter"></i>Follow</a>
+                </td>
+              </tr>
+              <tr>
+                <td><img class="n_ico" src="images/yt.png" alt="" /></td>
+                <td align="left">1,700k Subscribes</td>
+                <td align="left">
+                  <a href="#"><i class="bi bi-youtube"></i>Subscribe</a>
+                </td>
+              </tr>
+            </table>
+          </ul>
+
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-warning text-white"
+                aria-current="page"
+                href="#"
+                >Recent Updates</a
+              >
+              <div class="py-1 px-2">
+                <h3
+                  class="text-center"
+                  style="font-family: 'Rubik Dirt', cursive"
+                >
+                  Winter Cosplay: Top 10 Winners
+                </h3>
+                <ol>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ol>
+              </div>
+              <div class="p-3">
+                <h3
+                  class="text-left"
+                  style="font-family: 'Rubik Dirt', cursive"
+                >
+                  Popular Tags
+                </h3>
+                <ol>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                </ol>
+              </div>
+              <div class="p-3">
+                <h3
+                  class="text-left"
+                  style="font-family: 'Rubik Dirt', cursive"
+                >
+                  Featured Merch
+                </h3>
+                <div class="card">
+                  <img src="images/item1.png" alt="" style="width: 100%" />
+                  <div class="card-body">
+                    <h5 class="card-header text-center">Haikyuu Plushies</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/item2.jpg" alt="" style="width: 100%" />
+                  <div class="card-body">
+                    <h5 class="card-header text-center">Satella Figures</h5>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer style="background-color: #fcfefce7">
+      <div class="p-3 m-3">
+        <img src="images/weebz.png" alt="" />
+        <p>
+          A community of fans around the world who share their love of anime and
+          the culture within. Join us today and enjoy a variety of memes, arts,
+          and access to our members club and community events.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

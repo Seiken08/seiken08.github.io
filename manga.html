@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weebz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/weebz.png" alt="" />
+    </header>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="navbar-toggler collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar_collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Featured</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="$"
+                class="nav-link active dropdown-toggle"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                >Recommendations</a
+              >
+              <div
+                class="dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <a href="anime.html" class="dropdown-item">Anime</a>
+                <a href="manga.html" class="dropdown-item">Manga</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Manhwa</a>
+              </div>
+            </li>
+
+            <a href="merch.html" class="nav-item nav-link">Merchandise</a>
+          </ul>
+
+          <div class="navbar-nav ms-auto mx-5">
+            <a href="#" class="nav-item nav-link">Log In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card row">
+            <h2 class="card-header text-center">
+              <i class="bi bi-card-list"></i> Categories
+            </h2>
+            <div class="card-body">
+              <ul>
+                <li><a href="#">Slice of Life</a></li>
+                <li><a href="#">Isekai</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Shonen</a></li>
+                <li><a href="#">Shoujo</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Historical</a></li>
+                <li><a href="#">Adventure</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card row">
+            <h2 class="card-header">Ads</h2>
+            <img src="images/lzda.jpg" alt="" />
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary"
+                >Visit Lazada Shop Now</a
+              >
+            </div>
+            <img src="images/shp.png" alt="" />
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-danger"
+                >Visit Shoppee Shop Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card col-lg-6">
+          <h2 class="row card-header">Manga</h2>
+          <span class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link active dropdown-toggle"
+              id="suggestedDropdown"
+              data-bs-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="true"
+              >Sort by Recommendations</a
+            >
+            <div
+              class="dropdown-menu bg-dark text-info"
+              aria-labelledby="suggestedDropdown"
+            >
+              <a href="#" class="dropdown-item">Top Rated</a>
+              <a href="#" class="dropdown-item">Most Read</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item"
+                ><form class="form-inline">
+                  <input
+                    class="form-control mr-auto"
+                    type="search"
+                    placeholder="Read by User"
+                    aria-label="Search"
+                  /></form
+              ></a>
+            </div>
+          </span>
+          <div class="card-body">
+            <div class="row">
+              <div class="card col-lg-3 text-center">
+                <img src="images/c1.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Diamond in the Rough</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c2.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Magilumiere Co. LTD</h6>
+                  <small class="text-muted">Yu Aoki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c3.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Hokkaido Gals...</h6>
+                  <small class="text-muted">Kai Ikada</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c4.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Chainsaw Man</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c5.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Dandadan</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c6.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">My Hero Academia</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c8.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">One Piece</h6>
+                  <small class="text-muted">Eichiro Oda</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c9.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Jujutsu Kaisen</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c10.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Jojo's Bizzare Adventure</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c11.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Bleach</h6>
+                  <small class="text-muted">Tite Kubo</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c12.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Seraph of the End</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+              <div class="card col-lg-3 text-center">
+                <img src="images/c1.jpg" alt="" />
+                <div class="row card-body">
+                  <h6 class="card-header">Diamond in the Rough</h6>
+                  <small class="text-muted">Nao Sasaki</small>
+                  <div class="card-footer">
+                    <small class="text-muted">Chapter: #301</small
+                    ><span class="bg-danger text-white"
+                      ><i class="bi bi-fire"></i> Hot</span
+                    >
+                  </div>
+                  <a href="#" class="btn btn-outline-primary">Read Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="col-lg-3 m-0 p-0 f-1-1">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-dark text-white"
+                aria-current="page"
+                href="#"
+                >Stay Connected</a
+              >
+            </li>
+            <table class="table text-center" style="vertical-align: middle">
+              <tr>
+                <td><img class="n_ico" src="images/fb.png" alt="" /></td>
+                <td align="left">1,700k Likes</td>
+                <td align="left">
+                  <a href="#"><i class="bi bi-hand-thumbs-up"></i>Like</a>
+                </td>
+              </tr>
+              <tr>
+                <td><img class="n_ico" src="images/twit.png" alt="" /></td>
+                <td align="left">1,700k Tweets</td>
+                <td align="left">
+                  <a href="#"><i class="bi bi-twitter"></i>Follow</a>
+                </td>
+              </tr>
+              <tr>
+                <td><img class="n_ico" src="images/yt.png" alt="" /></td>
+                <td align="left">1,700k Subscribes</td>
+                <td align="left">
+                  <a href="#"><i class="bi bi-youtube"></i>Subscribe</a>
+                </td>
+              </tr>
+            </table>
+          </ul>
+
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-warning text-white"
+                aria-current="page"
+                href="#"
+                >Recent Updates</a
+              >
+              <div class="py-1 px-2">
+                <h3
+                  class="text-center"
+                  style="font-family: 'Rubik Dirt', cursive"
+                >
+                  Winter Cosplay: Top 10 Winners
+                </h3>
+                <ol>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ol>
+              </div>
+              <div class="p-3">
+                <h3
+                  class="text-left"
+                  style="font-family: 'Rubik Dirt', cursive"
+                >
+                  Popular Tags
+                </h3>
+                <ol>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                  <li>#Lorem</li>
+                </ol>
+              </div>
+              <div class="p-3">
+                <h3
+                  class="text-left"
+                  style="font-family: 'Rubik Dirt', cursive"
+                >
+                  Featured Merch
+                </h3>
+                <div class="card">
+                  <img src="images/item1.png" alt="" style="width: 100%" />
+                  <div class="card-body">
+                    <h5 class="card-header text-center">Haikyuu Plushies</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/item2.jpg" alt="" style="width: 100%" />
+                  <div class="card-body">
+                    <h5 class="card-header text-center">Satella Figures</h5>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer style="background-color: #fcfefce7">
+      <div class="p-3 m-3">
+        <img src="images/weebz.png" alt="" />
+        <p>
+          A community of fans around the world who share their love of anime and
+          the culture within. Join us today and enjoy a variety of memes, arts,
+          and access to our members club and community events.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
